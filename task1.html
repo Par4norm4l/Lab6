@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .site {
+            border: 1px solid black;
+            display: grid;
+            width: 1200px;
+            height: 700px;
+            gap: 5px;
+        }
+        
+        .masthead,
+        .colophon {
+            grid-column: span 8;
+            border: 1px solid black;
+            background: rgb(21, 172, 223);
+            color: white;
+            text-align: center;
+        }
+        
+        .main-content {
+            grid-column: 2/6;
+            border: 1px solid black;
+            background: rgb(50, 189, 50);
+            color: white;
+            text-align: center;
+        }
+        
+        .sidebar {
+            grid-column: 6/8;
+            border: 1px solid black;
+            background: rgb(170, 99, 170);
+            color: white;
+            text-align: center;
+        }
+        
+        .twin {
+            grid-column: 2/5;
+            grid-row: 3/4;
+            border: 1px solid black;
+            background: orange;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .twin:last-of-type {
+            grid-column: 5/8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="site">
+        <header class="masthead">
+            <h1 class="site-title">.header</h1>
+        </header>
+
+        <main id="content" class="main-content">
+            <h1>.main-content</h1>
+
+        </main>
+
+        <aside class="sidebar">
+            <h1>.sidebar</h1>
+
+        </aside>
+
+        <aside class="twin">
+            .twin
+        </aside>
+        <aside class="twin">
+            .twin
+        </aside>
+
+        <footer class="colophon grid">
+            <h1>.footer</h1>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
